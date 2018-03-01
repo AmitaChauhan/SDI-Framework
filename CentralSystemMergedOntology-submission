@@ -1,0 +1,302 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/amita/CentralSystemMergedOntology#"
+     xml:base="http://www.semanticweb.org/amita/CentralSystemMergedOntology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:WeighingModule="http://www.semanticweb.org/amita/WeighingModule#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/amita/CentralSystemMergedOntology">
+        <owl:imports rdf:resource="http://www.semanticweb.org/amita/AssistanceSystem"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/amita/WeighingModule#getsDataFrom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amita/WeighingModule#getsDataFrom">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/amita/WeighingModule#providesDataTo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amita/WeighingModule#hasContainer -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amita/WeighingModule#hasContainer">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/amita/WeighingModule#isKeptOn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amita/WeighingModule#hasProductDetailsOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amita/WeighingModule#hasProductDetailsOf">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/amita/WeighingModule#hasRFIDTag"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amita/WeighingModule#hasRFIDTag -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amita/WeighingModule#hasRFIDTag"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amita/WeighingModule#isKeptOn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amita/WeighingModule#isKeptOn"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amita/WeighingModule#providesDataTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amita/WeighingModule#providesDataTo"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/amita/WeighingModule#hasBreadth -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amita/WeighingModule#hasBreadth">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amita/WeighingModule#Container"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amita/WeighingModule#hasContainerWeight -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amita/WeighingModule#hasContainerWeight">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amita/WeighingModule#Container"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amita/WeighingModule#hasHeight -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amita/WeighingModule#hasHeight">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amita/WeighingModule#Container"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amita/WeighingModule#hasLength -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amita/WeighingModule#hasLength">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amita/WeighingModule#Container"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amita/WeighingModule#hasPartType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amita/WeighingModule#hasPartType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amita/WeighingModule#RFID"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amita/WeighingModule#hasPartWeight -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amita/WeighingModule#hasPartWeight">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amita/WeighingModule#RFID"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amita/WeighingModule#hasPartWeightTolerance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amita/WeighingModule#hasPartWeightTolerance">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amita/WeighingModule#RFID"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amita/WeighingModule#hasTotalWeight -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amita/WeighingModule#hasTotalWeight">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amita/WeighingModule#WeighingSensor"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amita/WeighingModule#hasX -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amita/WeighingModule#hasX">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amita/WeighingModule#Container"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amita/WeighingModule#hasY -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amita/WeighingModule#hasY">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amita/WeighingModule#Container"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amita/WeighingModule#hasZ -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amita/WeighingModule#hasZ">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amita/WeighingModule#Container"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/amita/WeighingModule#Container -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amita/WeighingModule#Container"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amita/WeighingModule#RFID -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amita/WeighingModule#RFID"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amita/WeighingModule#WeighingSensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amita/WeighingModule#WeighingSensor"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/amita/WeighingModule#Container1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amita/WeighingModule#Container1">
+        <WeighingModule:hasBreadth rdf:datatype="http://www.w3.org/2001/XMLSchema#double">10.0</WeighingModule:hasBreadth>
+        <WeighingModule:hasHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.0</WeighingModule:hasHeight>
+        <WeighingModule:hasLength rdf:datatype="http://www.w3.org/2001/XMLSchema#double">15.0</WeighingModule:hasLength>
+        <WeighingModule:hasX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</WeighingModule:hasX>
+        <WeighingModule:hasY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</WeighingModule:hasY>
+        <WeighingModule:hasZ rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</WeighingModule:hasZ>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amita/WeighingModule#Container2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amita/WeighingModule#Container2">
+        <WeighingModule:hasBreadth rdf:datatype="http://www.w3.org/2001/XMLSchema#double">10.0</WeighingModule:hasBreadth>
+        <WeighingModule:hasHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.0</WeighingModule:hasHeight>
+        <WeighingModule:hasLength rdf:datatype="http://www.w3.org/2001/XMLSchema#double">15.0</WeighingModule:hasLength>
+        <WeighingModule:hasX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">50.0</WeighingModule:hasX>
+        <WeighingModule:hasY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</WeighingModule:hasY>
+        <WeighingModule:hasZ rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</WeighingModule:hasZ>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amita/WeighingModule#Container3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amita/WeighingModule#Container3">
+        <WeighingModule:hasBreadth rdf:datatype="http://www.w3.org/2001/XMLSchema#double">10.0</WeighingModule:hasBreadth>
+        <WeighingModule:hasHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.0</WeighingModule:hasHeight>
+        <WeighingModule:hasLength rdf:datatype="http://www.w3.org/2001/XMLSchema#double">15.0</WeighingModule:hasLength>
+        <WeighingModule:hasX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">100.0</WeighingModule:hasX>
+        <WeighingModule:hasZ rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</WeighingModule:hasZ>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amita/WeighingModule#RFID1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amita/WeighingModule#RFID1">
+        <WeighingModule:hasPartType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Screw M1</WeighingModule:hasPartType>
+        <WeighingModule:hasPartWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</WeighingModule:hasPartWeight>
+        <WeighingModule:hasPartWeightTolerance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.1</WeighingModule:hasPartWeightTolerance>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amita/WeighingModule#RFID2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amita/WeighingModule#RFID2">
+        <WeighingModule:hasPartType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Screw M2</WeighingModule:hasPartType>
+        <WeighingModule:hasPartWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.5</WeighingModule:hasPartWeight>
+        <WeighingModule:hasPartWeightTolerance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.1</WeighingModule:hasPartWeightTolerance>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amita/WeighingModule#RFID3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amita/WeighingModule#RFID3">
+        <WeighingModule:hasPartType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Screw M3</WeighingModule:hasPartType>
+        <WeighingModule:hasPartWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.0</WeighingModule:hasPartWeight>
+        <WeighingModule:hasPartWeightTolerance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.1</WeighingModule:hasPartWeightTolerance>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amita/WeighingModule#WeighingSensor1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amita/WeighingModule#WeighingSensor1">
+        <WeighingModule:hasTotalWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#double">56.0</WeighingModule:hasTotalWeight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amita/WeighingModule#WeighingSensor2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amita/WeighingModule#WeighingSensor2">
+        <WeighingModule:hasTotalWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#double">96.0</WeighingModule:hasTotalWeight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amita/WeighingModule#WeighingSensor3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amita/WeighingModule#WeighingSensor3">
+        <WeighingModule:hasTotalWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#double">137.0</WeighingModule:hasTotalWeight>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

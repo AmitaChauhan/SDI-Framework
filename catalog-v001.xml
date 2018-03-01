@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1519590614932" name="http://www.semanticweb.org/amita/AssistanceSystem" uri="AssistanceSystem-submission.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1519590614932" name="http://www.semanticweb.org/amita/CentralSystem" uri="CentralSystem-submission.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1519590614932" name="http://www.semanticweb.org/amita/EyeTrackingModule" uri="EyeTracking-submission.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1519590614932" name="http://www.semanticweb.org/amita/WeighingModule" uri="WeighingModule-submission.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1519590614932" name="duplicate:http://www.semanticweb.org/utkarsh/ontologies/2018/1/untitled-ontology-15" uri="test.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1519590614932" name="duplicate:http://www.semanticweb.org/utkarsh/ontologies/2018/1/untitled-ontology-15" uri="test3.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1519590614932" name="http://www.semanticweb.org/utkarsh/ontologies/2018/1/untitled-ontology-16" uri="test2.owl"/>
+    </group>
+</catalog>
