@@ -1,0 +1,27 @@
+﻿######## Weighing module calibration ########
+* The working channels are 1, 2 and 3 starting from the side of larger Ethernet ports. While calibrating it from the softwares (AutoShelf Client or Speed), these will be called 0,  1 and 2.
+* Scale mapping to channel depends on the parameter settings. If the load capacity and parameters are the same, then the channels are interchangeable. In present scenario, left scale maps to channel0, middle to channel1 and right to channel2.
+
+
+######## Booting up the weighing scale system ########
+* Attach the weighing scale to 12V power supply. 
+* Attach RFID readers to RPi.
+* Start database by running “mongo”
+* Go to the directory where files are located.
+* Compile the reportNfcChange by running “gcc -o reportNfcChange reportNfcChange.c -lnfc”
+* Run the reportNfcChange file using “sudo ./reportNfcChange”
+* Run the weighingModule file using “python weighing.py
+* Now, before keeping the boxes on the weighing scale, keep the board with three RFID tags on weighing scale. Left and right sides are marked on the board. Ensure that the RFID readers can read all three tags. In case  there is a problem in reading the tags any other tags can be used. Make sure that this new tag has an entry in the database. 
+* New entry in database can be made by running “sudo sh add_new_tag.sh”
+* Enter the tag with something like “SampleProductn” and weight “n” gms. After this data entry you will see an nfcid in numbers. Replace this nfcid in the python script. For instance, if left side tag is not working, replace the “Left ID” in the script with the nfcid produced for this tag.
+* Additionally, a tag can be search in database using “mongo” >> “use storageBins” >> “db.rfid.find()”.
+* Now put boxes on the weighing scale. Make sure that the tag on the box corresponds to the parts in the box.
+* If box positions are swapped, it might take up to 20 seconds to update the new 
+positions.
+* In case you switch from using RS485 shield to USB-serial adapter, make sure to change the port from “/dev/ttyAMA0” to “/dev/ttyUSB0” in the weighingScale.py file.
+* To communicate with c# script, compile the messageWeighingModule.cs file by running "mcs messageWeighingModule.cs". To install mono use "uso apt-get install mono-complete".
+* For ReportFetchedPart(), run "mono messageWeighingModule.exe part <string> <int> <string>".
+* For ReportLowFilling(), run "mono messageWeighingModule.exe inventory <string> <string>".
+
+
+------ Please note that the shell script was written by another team member.---------
