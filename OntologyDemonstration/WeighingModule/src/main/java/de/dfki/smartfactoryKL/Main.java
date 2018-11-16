@@ -23,9 +23,8 @@ public class Main {
 
     public static void main(String[] args) {
         File file = new File(
-                "C:\\Users\\Utkarsh\\Desktop\\FinalOntology22503 - Copy.owl");
+                "C:\\PATH\\TO\\SDI-Framework\\SimplifiedOntology.owl");
         OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
-        OWLDataFactory factory = OWLManager.getOWLDataFactory();
 
         ZeroMQBrainEventConsumer brainEventConsumer = new ZeroMQBrainEventConsumer("tcp://localhost:5555", true);
 

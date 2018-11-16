@@ -9,10 +9,12 @@ Following comands can be used to run the implementation:
 ### Central System
 - Open command window.
 - Navigate to the folder.
+- Install `zeromq`, if required, as ```pip install zmq```.
 - Run the Python file ```python CentralSystem.py ```
 
 ### CPS Module (Inventory Module -- OntologyDemonstration)
-- Open the Java file using Eclipse, IntelliJ or a similar IDE.
-- Run the ```main ```
+- Open the Java project using Eclipse, IntelliJ or a similar IDE.
+- Change the path of the Ontology in `Main.java` to point to `SimplifiedOntology.owl` in the root folder.
+- Run the project using `Main.main` as the entry point.
 
 Note: Central system is the class ```Brain``` and CPS module is the class ```WeighingModule``` in the code. HardwarePrograms folder contains code for collecting data from sensors and RFID readers.

@@ -1,0 +1,560 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/ontologies/2017/1/WeighingModuleOntology1"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/ontologies/2017/1/WeighingModuleOntology1">
+    <Prefix name="" IRI="http://www.semanticweb.org/ontologies/2017/1/WeighingModuleOntology1"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Container"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RFID2"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#y"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#getsDataFrom"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Total_number_of_parts"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isKeptOn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasContainer"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Total_weight"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Tolerance_of_weight"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Weight_per_piece"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Container2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WeighingModule3"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Weight_of_box"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WeighingModule1"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#x"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RFID3"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#z"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#providesDataTo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Precision_of_weighing_sensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RFID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Breadth"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Inventory"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RFID1"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Length"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Height"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WeighingModule"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Part_description"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Container3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WeighingModule2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Container1"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Container"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#isKeptOn"/>
+            <Class IRI="#WeighingModule"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RFID"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#providesDataTo"/>
+            <Class IRI="#WeighingModule"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RFID"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#Part_description"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WeighingModule"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#getsDataFrom"/>
+            <Class IRI="#RFID"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WeighingModule"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasContainer"/>
+            <Class IRI="#Container"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Container"/>
+        <NamedIndividual IRI="#Container1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Container"/>
+        <NamedIndividual IRI="#Container2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Container"/>
+        <NamedIndividual IRI="#Container3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RFID"/>
+        <NamedIndividual IRI="#RFID1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RFID"/>
+        <NamedIndividual IRI="#RFID2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RFID"/>
+        <NamedIndividual IRI="#RFID3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WeighingModule"/>
+        <NamedIndividual IRI="#WeighingModule1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WeighingModule"/>
+        <NamedIndividual IRI="#WeighingModule2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WeighingModule"/>
+        <NamedIndividual IRI="#WeighingModule3"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isKeptOn"/>
+        <NamedIndividual IRI="#Container1"/>
+        <NamedIndividual IRI="#WeighingModule1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isKeptOn"/>
+        <NamedIndividual IRI="#Container2"/>
+        <NamedIndividual IRI="#WeighingModule2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isKeptOn"/>
+        <NamedIndividual IRI="#Container3"/>
+        <NamedIndividual IRI="#WeighingModule3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#providesDataTo"/>
+        <NamedIndividual IRI="#RFID1"/>
+        <NamedIndividual IRI="#WeighingModule1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#providesDataTo"/>
+        <NamedIndividual IRI="#RFID2"/>
+        <NamedIndividual IRI="#WeighingModule2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#providesDataTo"/>
+        <NamedIndividual IRI="#RFID3"/>
+        <NamedIndividual IRI="#WeighingModule3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#getsDataFrom"/>
+        <NamedIndividual IRI="#WeighingModule1"/>
+        <NamedIndividual IRI="#RFID1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasContainer"/>
+        <NamedIndividual IRI="#WeighingModule1"/>
+        <NamedIndividual IRI="#Container1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#getsDataFrom"/>
+        <NamedIndividual IRI="#WeighingModule2"/>
+        <NamedIndividual IRI="#RFID2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasContainer"/>
+        <NamedIndividual IRI="#WeighingModule2"/>
+        <NamedIndividual IRI="#Container2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#getsDataFrom"/>
+        <NamedIndividual IRI="#WeighingModule3"/>
+        <NamedIndividual IRI="#RFID3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasContainer"/>
+        <NamedIndividual IRI="#WeighingModule3"/>
+        <NamedIndividual IRI="#Container3"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Breadth"/>
+        <NamedIndividual IRI="#Container1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">15.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Height"/>
+        <NamedIndividual IRI="#Container1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">10.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Length"/>
+        <NamedIndividual IRI="#Container1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">20.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Weight_of_box"/>
+        <NamedIndividual IRI="#Container1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">150.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#x"/>
+        <NamedIndividual IRI="#Container1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#y"/>
+        <NamedIndividual IRI="#Container1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#z"/>
+        <NamedIndividual IRI="#Container1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Breadth"/>
+        <NamedIndividual IRI="#Container2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">15.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Height"/>
+        <NamedIndividual IRI="#Container2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">10.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Length"/>
+        <NamedIndividual IRI="#Container2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">20.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Weight_of_box"/>
+        <NamedIndividual IRI="#Container2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">150.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#x"/>
+        <NamedIndividual IRI="#Container2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">200.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#y"/>
+        <NamedIndividual IRI="#Container2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#z"/>
+        <NamedIndividual IRI="#Container2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Breadth"/>
+        <NamedIndividual IRI="#Container3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">15.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Height"/>
+        <NamedIndividual IRI="#Container3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">10.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Length"/>
+        <NamedIndividual IRI="#Container3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">20.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Weight_of_box"/>
+        <NamedIndividual IRI="#Container3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">150.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Inventory"/>
+        <NamedIndividual IRI="#RFID1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Part_description"/>
+        <NamedIndividual IRI="#RFID1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Screw M3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tolerance_of_weight"/>
+        <NamedIndividual IRI="#RFID1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Weight_per_piece"/>
+        <NamedIndividual IRI="#RFID1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">5.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Inventory"/>
+        <NamedIndividual IRI="#RFID2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Part_description"/>
+        <NamedIndividual IRI="#RFID2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Screw M5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tolerance_of_weight"/>
+        <NamedIndividual IRI="#RFID2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Weight_per_piece"/>
+        <NamedIndividual IRI="#RFID2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">7.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Inventory"/>
+        <NamedIndividual IRI="#RFID3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Part_description"/>
+        <NamedIndividual IRI="#RFID3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Screw M10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tolerance_of_weight"/>
+        <NamedIndividual IRI="#RFID3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Weight_per_piece"/>
+        <NamedIndividual IRI="#RFID3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">8.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Precision_of_weighing_sensor"/>
+        <NamedIndividual IRI="#WeighingModule1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">5.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Total_number_of_parts"/>
+        <NamedIndividual IRI="#WeighingModule1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">150</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Total_weight"/>
+        <NamedIndividual IRI="#WeighingModule1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">750.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Precision_of_weighing_sensor"/>
+        <NamedIndividual IRI="#WeighingModule2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">5.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Total_number_of_parts"/>
+        <NamedIndividual IRI="#WeighingModule2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">67</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Total_weight"/>
+        <NamedIndividual IRI="#WeighingModule2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">500.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Precision_of_weighing_sensor"/>
+        <NamedIndividual IRI="#WeighingModule3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">5.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Total_number_of_parts"/>
+        <NamedIndividual IRI="#WeighingModule3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">125</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Total_weight"/>
+        <NamedIndividual IRI="#WeighingModule3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">1000.0</Literal>
+    </DataPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#getsDataFrom"/>
+        <ObjectProperty IRI="#providesDataTo"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasContainer"/>
+        <ObjectProperty IRI="#isKeptOn"/>
+    </InverseObjectProperties>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Breadth"/>
+        <Class IRI="#Container"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Height"/>
+        <Class IRI="#Container"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Inventory"/>
+        <Class IRI="#RFID"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Length"/>
+        <Class IRI="#Container"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Part_description"/>
+        <Class IRI="#RFID"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Precision_of_weighing_sensor"/>
+        <Class IRI="#WeighingModule"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Tolerance_of_weight"/>
+        <Class IRI="#RFID"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Total_number_of_parts"/>
+        <Class IRI="#WeighingModule"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Total_weight"/>
+        <Class IRI="#WeighingModule"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Weight_of_box"/>
+        <Class IRI="#Container"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Weight_per_piece"/>
+        <Class IRI="#RFID"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#x"/>
+        <Class IRI="#Container"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#y"/>
+        <Class IRI="#Container"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#z"/>
+        <Class IRI="#Container"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#Breadth"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Height"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Inventory"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Length"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Part_description"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Precision_of_weighing_sensor"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Tolerance_of_weight"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Total_number_of_parts"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Total_weight"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Weight_of_box"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Weight_per_piece"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#x"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#y"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#z"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DatatypeDefinition>
+        <Datatype abbreviatedIRI="xsd:double"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DatatypeDefinition>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+
